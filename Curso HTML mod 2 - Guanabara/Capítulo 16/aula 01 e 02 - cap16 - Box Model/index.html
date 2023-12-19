@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 e 02 | Box Model</title>
+    <style>
+        h1{
+            height: 300px;
+            width: 300px;
+            background-color: wheat;
+            border-width:10px;
+            border: solid black;
+            padding: 10px 10px 10px 10px;
+
+            /*Ordem das direções:*/
+            /*padding/margin/etc: top,right,bottom,left*/
+        }
+
+        a{
+            border-width: 10px;
+            border: solid red
+        }
+    </style>
+</head>
+<body>
+    <!--ANOTAÇÕES!!!!-->
+    <!--
+        A teoria da caixas traz a ideia de que toda página web
+        é formada por caixas aninhadas, ou seja, uma dentro da outra.
+
+        Exemplos de modelos:
+
+        box-level: prevê que cada elemento ocupará toda uma linha, então os próximos ficarão abaixo.
+
+        inline-level: prevê que dois elementos pode ocupar uma mesma lonha, ajustando o segundo ao espaço restante no local.
+    -->
+    <h1>Exemplo de caixa box-level(h1)</h1>
+    <p>Parágrafos também são exemplos de box-level, mas o <a href="">link</a> são exemplos de caixas <strong>inline-level</strong></p>
+</body>
+</html>

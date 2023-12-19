@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+        body{
+            font-family: 'Preahvihear', sans-serif;
+        }
+
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited{ /*Ao visitar o link*/
+            color:yellowgreen;
+        }
+
+        a:hover{ /*Ao passar o mouse*/
+            color:deepskyblue;
+            text-decoration: underline;
+        }
+
+        a:active{ /*Ao clicar e segurar o link*/
+            color:purple;
+        }

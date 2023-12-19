@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 | Áudio em HTML</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Inserindo  Áudio em HTML</h1>
+    <hr>
+    <h2>Vamos aprender a inserir áudios no HTML5</h2>
+     <p>Primeira forma:</p>
+    <audio src="audios/happy-mistake.mp3" controls autoplay></audio><br>
+    <audio src="audios/guanacast-33.mp3" controls autoplay></audio>
+
+    <!--
+        atributo controls é para aparecer os botões do áudio.
+        o autoplay é para reproduzir automaticamente o arquivo.
+    -->
+
+    <p>Segunda forma (funciona em todos os navegadores)</p>
+    <audio preload="metadata" autoplay controls loop>
+    <!-- 
+        o atributo preload="" possui 3 opções: auto,metadata e none. O AUTO carrega o arquivo juntamente com o site, é desaconselhável,
+        pois se o arquivo for muito pesado, atrapalhará a experiência do usuário.
+        O METADATA carrega apenas algumas informações primeiramente e o NONE carrega apenas se o usuário clicar para reproduizir o arquivo.
+    -->
+        <source src="audios/guanacast-33.mp3" type="audio/mpeg">
+        <!--<source src="audios/guanacast-33.ogg" type="audio/ogg">-->
+        <!--<source src="audios/guanacast-33.wav" type="audio/wav">-->
+        
+        <!--[ATENÇÃO!] É DESACONCELHAVEL USAR O FORMATO WAV POR CAUSA DO PESO NO SITE>-->
+
+        <!--Por meio dos source src entre as tags audio, podemos carregar o mesmo arquivo em mais de um formato, 
+        afim de prevenir erros na reprodução,
+        ou seja, se não for um vai o próximo.-->
+    </audio>
+
+    <p>Infelizmente o seu navegador não consegue reproduzir áudios. Clique no link abaixo para baixar o arquivo</p>
+    <a href="audios/guanacast-33.ogg" download="audios/guanacast-33.ogg" type="application/ogg">Clique aqui</a>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Exemplos com Pseudo-Elementos
+    </title>
+    <link rel="stylesheet" href="pseudoclasse.css">
+    <style>
+        
+        /*Pseudo Elementos*/
+
+
+        a::before{ /*Antes do elemento*/
+            content: '\0089   '; 
+            /*Adiciona algo ao elemento, nesse caso texto*/
+            color: black;
+        }
+        a::after{ /*Após o elemento*/
+            content: '   [link]';
+            /*Adiciona algo ao elemento, nesse caso texto*/
+            text-decoration: none;
+            color: black;
+        }
+
+        #principal{
+            background-color: yellow;
+        }
+        #principal:before{
+            background-color: lightblue;
+        }
+        #principal::after{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-------ANOTAÇÕES----------->
+     <!--Pseudo-elementos alteram o conteúdo do elemento em si, ao contrário da pseudo-class que altera elemento com base em seu estado ou interação -->
+    <!---------------------------->
+    <h1>Personalizando Links</h1>
+    <hr>
+    <ul type="square">
+        <li>
+            <a id="principal" target="_blank" href="https://gustavoguanabara.github.io">Repositório GitHub</a>
+        </li>
+        <li>
+            <a target="_blank"  href="https://youtube.com/cursoemvideo/">Canal do Youtube</a>
+        </li>
+        <li>
+            <a target="_blank"  href="https://www.cursoemvideo.com">Site do CursoemVideo</a>
+        </li>
+    </ul>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 04 | Citações e Códigos</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código Fonte</h2>
+    <p>
+        O comando <code>document.getElementById('teste')</code> é escrito em JS.
+
+        <!--O comando code é para monoespaçar a fonte, ou seja, fazer com que todos os caracteres ocupem o mesmo espaço.-->
+    </p>
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0;
+    print(f'O número {num} é Par.')
+    ...
+        </code>
+    </pre>
+
+    <!--Faz com que todas as características das linhas digitas sejam relevadas, como até o espaço dos tabs. Apresenta o comando literalmente como ele foi digitado.-->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="www.todamateria.com.br">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae et voluptatem incidunt quisquam saepe officiis a laboriosam eveniet hic doloremque reprehenderit ducimus perferendis est, nesciunt eos excepturi impedit repellat quia?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem vitae quaerat eveniet quasi repellendus rem dolore, assumenda eum, quibusdam repellat doloribus et error neque fugit inventore blanditiis omnis distinctio nesciunt!
+    </blockquote>
+
+    <!--a tag <q></q> é para marcar citações-->
+    <!--<blockquote></blockquote> é para citações mais longas.-->
+    <!--O atributo cite do blockquote é utilizado por meios de pesquisa de forma a manter os diretos de fez comentário que foi citado,por exemplo.-->
+
+
+    <h2>Abreviações</h2>
+    <p>Estou gostando muito de <abbr title="HyperText Markup">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+    <!--A tag <abbr></abbr> é para mostrar o significado de abreviações, tipo HTML,CSS e JS.-->
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="ltr">Estou aprendendo HTML.</bdo></p>
+    <p><bdo dir="rtl">Estou aprendendo HTML.</bdo></p>
+
+    <!--A tag <bdo></bdo> é para dizer a direção que o texto deve ser apresentado, ou seja, de forma normal ou invertida-->
+</body>
+</html>

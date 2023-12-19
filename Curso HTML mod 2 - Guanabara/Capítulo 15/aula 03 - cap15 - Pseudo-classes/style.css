@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+div{
+    background-color: lightpink;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    width:200px;
+    height:200px;
+}
+
+div:hover{
+    background-color: purple;
+    font-size: 2em;
+}
+
+/*Pseudo-class é uma característica adicional que se pode atribuir a um elemento html, ex o caso acima, ao passar o mouse em cima da div, a cor da mesma é alterada.*/

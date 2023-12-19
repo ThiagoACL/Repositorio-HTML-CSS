@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 | Grouping tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding:3px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+           
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding:5px;
+        }
+
+        article > aside{
+            background-color: rgb(165, 163, 163);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin:0px;
+        }
+
+        footer > p{
+            margin: 0px;;
+        }
+    </style>
+</head>
+<body>
+    <!--Tags de agrupamento html4: div e span-->
+
+    <!--Tags mais usadas no HTML5:-->
+
+    <header> <!--Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main> <!--Corpo do site-->
+        <section id="assuntos"> <!--Seções/divisões do corpo(main)-->
+            <p>Esportes, Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article> <!--conteúdo do site-->
+                <h2>Notícia sobre o Brasil</h2>
+                <aside>
+                    <p>Artigo esrito por José da Silva</p>
+                </aside>
+            </article>
+            <article></article>
+        </section>
+    </main>
+    <footer> <!--Cabeçalho-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>

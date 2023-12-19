@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com responsividade</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: auto;
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--Responsividade em um página!-->
+    <!--
+        Para tornar o conteúdo de um site responsivo, uma das formas é utilizarmos as configurações no body.
+
+        body{
+            width:auto;
+            min-width: x;
+            max-width: x;
+            o x nesse caso simboliza o valor
+        }
+
+        Para imagens responsivas, podemos utilizar a tag no body 
+        <picture>
+            <source media="(max-width:600px )" srcset="../imagens/irina-blok-pq.jpg">
+            <img src="../imagens/irina-blok.jpg" alt="Irina">
+        <picture/> 
+        
+        e no css:
+
+            img{
+                width: 100%;
+            }
+    -->
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto impedit, cupiditate quidem culpa accusamus quas suscipit sint tenetur eum necessitatibus illum vel soluta alias nesciunt hic, nam rerum nihil!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo asperiores consectetur, quaerat rem amet. Ipsa adipisci, assumenda voluptates, ut enim neque optio earum reiciendis tempore vitae dicta, esse distinctio.</p>
+
+        <picture>
+            <source media="(max-width:600px )" srcset="../imagens/irina-blok-pq.jpg">
+            <img src="../imagens/irina-blok.jpg" alt="Irina">
+        </picture>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod error sapiente est expedita sequi praesentium pariatur incidunt aperiam necessitatibus totam natus alias dolor maxime eveniet, quidem ab nostrum obcaecati. Veritatis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sunt minima at temporibus. Non natus quam libero impedit laborum temporibus incidunt, aliquam iusto officia neque facere sed deleniti saepe vitae.</p>
+    </main>
+</body>
+</html>

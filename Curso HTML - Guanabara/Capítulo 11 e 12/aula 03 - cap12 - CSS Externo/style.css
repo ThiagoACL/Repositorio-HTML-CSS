@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*Esse comando acima é para ter compatibilidade acom acentuação, igual no HTML.*/
+
+body{
+    background-color: wheat;
+    padding: 20px;
+    font-size: 15px;
+}
+
+h2,h3{
+    color:brown;
+    text-shadow: 1px 2px 1px;
+}

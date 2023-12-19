@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 | Links internos</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar sites por meio de links. Acesse o Youtube por aqui:<a href="https://www.youtube.com" target="_blank" rel="external"> Youtube</a></p>
+    
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Para acessar a próxima, <a href="pag02.html" rel="next">clique aqui!</a></p>
+    <p>Para acessar a terceira página, <a href="notícias/pag03.html" rel="next">clique aqui!</a></p>
+
+    <!--Para links, utilizar por meio do atributo rel indentifucações para os mecanismos de buscas.-->
+    <!--Exemplo:
+        rel="next" (indicar para um link interno que é para a próx página)
+        rel="prev" (indicar que esse link interno para voltar para página anterior)
+        rel="nofollow" (indicar que esse link não precisar ser verificado)
+        rel="external" (indicar que esse é para um link externo, para outro site)-->
+
+    <!--target é um outro atributo dos links para os mecanismos de busca
+        target="_blank" (para abrir links em outra aba.)
+        target="_self"  (para abrir links na mesma página),
+        naturalmente não precisa usar o _self, apenas para formalizar-->
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div:hover{
+            color: red;
+        }
+
+        div:hover > p{ /*Forma de se referir a um elemento filho*/
+            display: block;
+            color:white;
+            background-color: black;
+            width:200px;
+        }
+
+        div > p{ /*Forma de se referir a um elemento filho*/
+            display: none;
+        }
+    </style>
+</head>
+<body>
+     <!-------ANOTAÇÕES----------->
+     <!--No caso acima usamos o efeito hover na div para mexer em um elemento filho, nesse caso o p-->
+    <!---------------------------->
+
+    <h1>Exemplo com o Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui!
+        <p>
+            <strong>
+                TEXTO ESCONDIDO...
+            </strong>
+        </p>
+    </div>
+    <p>FIM DO EXEMPLO!</p>
+   
+</body>
+</html>
