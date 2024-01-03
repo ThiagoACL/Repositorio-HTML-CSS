@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 | Background-attachment e shorthand</title>
+    <style>
+        body{
+            /*
+                height: 100vh;
+                background-color: black;
+                background-image: url("../imagens-cap19/wallpaper002.jpg");
+                background-position: center top;
+                background-repeat: no-repeat;
+            /*
+
+            /*
+                Tipos de background-size
+                auto: modo automático.
+
+                contain: mostra a imagem toda sem cortes.
+
+                cover: cobre a tela toda, mesmo que seja necessário cortar a mesma.
+
+            */  
+           
+            background-attachment: fixed ;
+            /*attachment = vínculo*/
+
+            /*
+                Shorthand - background
+                color > imagem > position > repeat > [size] > attachment
+
+                Apesar de na documentação, a propriedade size pode ser utilizada na shorthand, na prática, a mesma não funciona tão bem, sendo necessário utilizar uma declaração separada.
+            */
+
+            background: black url("../imagens-cap19/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover;
+
+        }
+
+        main{
+            background-color: white;
+            max-width: 600px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aspernatur vel ratione dignissimos doloribus officia, accusantium voluptate! Repudiandae distinctio, omnis rerum cupiditate placeat neque accusantium ab inventore iure voluptatibus assumenda earum?
+        </p>
+
+    </main>
+</body>
+</html>
