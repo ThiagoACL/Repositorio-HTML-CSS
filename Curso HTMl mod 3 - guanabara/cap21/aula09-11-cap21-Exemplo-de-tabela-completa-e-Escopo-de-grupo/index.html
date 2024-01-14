@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 | Exemplo de Tabela Completa</title>
+    <style>
+        body{
+            font-family: cursive;
+        }
+
+        div#Container{
+            overflow: auto;
+        }
+
+        table{
+            width: 700px;
+        }
+
+        td{
+            padding: 3px;
+            text-align: center;
+            border: 1px solid black;
+            box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.432);
+        }
+
+        th.Gênero{
+            padding: 5px;
+            background-color: rgb(43, 41, 41);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="Container">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" class="Gênero"><strong>Grupos</strong></th> <!--Escopo de coluna-->
+                    <th scope="col" class="Gênero"><Strong>Nomes</Strong></th> <!--Escopo de coluna-->
+                    <th scope="colgroup" class="Gênero" colspan="3"><strong>Filmes</strong></th> <!--Escopo de grupo de colunas-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3" class="Gênero">Mulheres</th> <!--Escopo de grupo de linhas-->
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="3" class="Gênero">Homens</th> <!--Escopo de grupo de linhas-->
+                    <td>Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars 5</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

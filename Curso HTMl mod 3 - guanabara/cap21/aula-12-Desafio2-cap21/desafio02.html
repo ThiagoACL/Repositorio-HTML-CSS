@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+         body{
+            font-family: cursive;
+        }
+
+        table{
+            width: 700px;
+        }
+
+        th.Titulos{
+            padding: 5px;
+            background-color: rgb(48, 47, 47);
+            color: rgb(255, 251, 251);
+            box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.432);
+        }
+
+        td{
+            padding: 3px;
+            text-align: center;
+            border: 1px solid black;
+            box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.432);
+        }
+
+        th.AreaConhecim{
+            border: 1px solid black;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            font-size: 1.2em;
+            color: rgb(0, 0, 0);
+            box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.432);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" class="Titulos" rowspan="2">Área</th>
+                <th scope="col" class="Titulos" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" class="Titulos" colspan="2">Notas</th>
+                <th scope="col" class="Titulos" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="Titulos">Nota1</th>
+                <th scope="col" class="Titulos">Nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="AreaConhecim">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="Titulos" style="text-align: left;">Média de Exatas</th>
+                <th class="Titulos">0.0</th>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="AreaConhecim">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Filosofia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Sociologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="Titulos" style="text-align: left;">Média de Exatas</th>
+                <th class="Titulos">0.0</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
