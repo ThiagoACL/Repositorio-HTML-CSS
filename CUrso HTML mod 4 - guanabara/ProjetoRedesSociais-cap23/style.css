@@ -5,6 +5,11 @@
     padding: 0px;
 }
 
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
 html,body{
     position: relative;
     height: 100vh;
@@ -57,5 +62,23 @@ section#celular > iframe{
     margin-left: 22px;
     width: 266px;
     height: 471px;
+}
+
+p{
+    margin-top: 48vh;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: white;
+}
+
+p > a.rodapé{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+p > a.rodapé:hover{
+    text-decoration: underline;
 }
 
